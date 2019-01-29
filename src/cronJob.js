@@ -29,5 +29,5 @@ const backup = () => Promise
 
 
 //run this job every 8 hours
-const task = cron.schedule('*/8 * * * *', backup)
+const task = cron.schedule('0 */4 * * *', backup)
 backup() // run the fist time
